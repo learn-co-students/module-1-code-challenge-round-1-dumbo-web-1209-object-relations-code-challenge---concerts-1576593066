@@ -13,7 +13,7 @@ For our purposes, a `Band` has many `Concerts`, a `Venue` has many `Concerts`s, 
 ## Topics
 
 - Classes and Instances
-- Class and Instance Methods
+- Class and Instance Methods 
 - Variable Scope
 - Object Relationships
 - Arrays and Array Methods
