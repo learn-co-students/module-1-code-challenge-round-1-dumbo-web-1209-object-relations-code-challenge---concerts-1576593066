@@ -6,6 +6,8 @@ We have three models: `Band`, `Concert`, and `Venue`.
 
 For our purposes, a `Band` has many `Concerts`, a `Venue` has many `Concerts`s, and a `Concert` belongs to a `Band` and to a `Venue`.
 
+    Band -<Concerts>- Venue
+
 `Band` - `Venue` is a many to many relationship.
 
 **Note**: You should draw your domain on paper or on a whiteboard _before you start coding_. Remember to identify a single source of truth for your data.
