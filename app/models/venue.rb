@@ -9,6 +9,21 @@ class Venue
         @@all << self
     end
 
+    def title
+    end
+
+    def city
+    end
+    
+    def bands
+    end
+
+    def concert_on(date)
+    end
+
+    def most_frequent_band
+    end
+
     def self.all
         @@all
     end
