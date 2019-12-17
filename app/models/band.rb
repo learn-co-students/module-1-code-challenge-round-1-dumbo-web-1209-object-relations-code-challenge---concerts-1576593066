@@ -12,4 +12,21 @@ class Band
     def self.all
         @@all
     end
+
+    def concerts 
+    end
 end
+
+
+
+
+
+
+
+
+# #### Band
+
+
+# - `Band#concerts`
+#   - should return an array of all the concerts that 
+#   the band has played in
