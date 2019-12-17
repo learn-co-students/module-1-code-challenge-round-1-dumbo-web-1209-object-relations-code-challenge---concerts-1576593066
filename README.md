@@ -5,6 +5,11 @@ For this assignment, we'll be working with a Concert domain.
 We have three models: `Band`, `Concert`, and `Venue`.
 
 For our purposes, a `Band` has many `Concerts`, a `Venue` has many `Concerts`s, and a `Concert` belongs to a `Band` and to a `Venue`.
+band --<concert
+venue --<concert
+concert-band
+concert - venue
+band--<concert>--venue
 
 `Band` - `Venue` is a many to many relationship.
 
@@ -78,7 +83,7 @@ Some of the methods listed are provided to you in the starter code. You should c
   - should return all instances of `Concert`
 
 ### Object Relationship Methods
-
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #### Concert
 
 - `Concert#band`
