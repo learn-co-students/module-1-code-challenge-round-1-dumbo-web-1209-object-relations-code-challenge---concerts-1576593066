@@ -9,12 +9,11 @@ class Band
         @@all << self
     end
 
-    def concerts(band)
-        played = []
-        self.band.select do |band| 
-          played = Concert.band == band.concert
-        end 
-        played 
+
+    def concerts
+      Concert.all.select do |concert|
+        concert.band == self
+      end
     end
 
     def play_in_venue(venue, date)
@@ -22,8 +21,8 @@ class Band
     end
 
     def all_introductions
-        self.all.map do |intro|
-            puts "Hello #{@city}!!!!!, we are 
+        concerts.map do |intro|
+            "Hello #{@city}!!!!!, we are
             #{@name} and we're from #{@hometown}"
         end
     end
@@ -37,7 +36,7 @@ end
 
 #   ### Object Relationship Methods
 # - `Band#concerts`
-#   - should return an array of all the concerts that the 
+#   - should return an array of all the concerts that the
     # band has played in
 
 #     - `Band#play_in_venue(venue, date)`
@@ -45,8 +44,8 @@ end
 #    a new concert for the band in that venue on that date
 
 # - `Band#all_introductions`
-#   - returns an array of strings representing all the 
+#   - returns an array of strings representing all the
     # introductions for this band
-#   - each introduction is in the form 
-# `"Hello {insert city name here}!!!!!, we are 
+#   - each introduction is in the form
+# `"Hello {insert city name here}!!!!!, we are
 # {insert band name here} and we're from {insert hometown here}"`

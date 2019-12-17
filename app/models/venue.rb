@@ -15,8 +15,20 @@ class Venue
         end
     end
 
+    def concerts
+      Concert.all.select do |concert|
+        concert.venue == self
+      end
+    end
+
+    def bands
+      self.concerts.map do |concert|
+        concert.band
+      end
+    end
+
     def most_frequent_band
-        self.mode 
+        self.mode
     end
 
     def self.all
