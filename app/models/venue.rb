@@ -9,6 +9,20 @@ class Venue
         @@all << self
     end
 
+    def self.concerts
+        Concert.all.each do |all_concerts|
+            Concert.all == all_concerts 
+        end
+    end
+
+    def self.bands
+        Band.all.each do |all_bands|
+            Band.all == all_bands 
+        end
+    end
+
+
+
     def self.all
         @@all
     end

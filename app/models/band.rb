@@ -9,6 +9,11 @@ class Band
         @@all << self
     end
 
+    def self.concerts #almost had it!
+        Concert.all.find do |wu_tang_show|
+
+    end
+
     def self.all
         @@all
     end
