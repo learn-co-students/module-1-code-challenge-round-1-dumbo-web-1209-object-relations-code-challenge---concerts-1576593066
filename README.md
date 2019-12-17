@@ -44,6 +44,8 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 ### Initializers, Readers, and Writers
 
+Band -< Concert >- Venue
+
 #### Band
 
 - `Band#initialize(name, hometown)`
